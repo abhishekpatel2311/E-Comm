@@ -69,7 +69,7 @@ class CardInfo extends StatelessWidget {
                                           primaryColor, BlendMode.srcIn),
                                     ),
                                   ),
-                                )
+                                ),
                             ],
                           ),
                           const Spacer(),
