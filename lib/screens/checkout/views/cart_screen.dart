@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
-
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -17,7 +16,8 @@ class CartScreen extends StatelessWidget {
                 'Review your order',
                 style: TextStyle(
                   fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w200,
                 ),
               ),
               SizedBox(height: 16),
@@ -25,11 +25,14 @@ class CartScreen extends StatelessWidget {
               OrderItem(
                 title: 'Sleeveless Tiered Dobby...',
                 price: '\$299,43',
-                originalPrice: '\$534,33', imageUrl: 'https://www.nextdirect.com/nxtcms/resource/blob/5821518/d114a8023263017f86b11c206949508e/shackets-data.jpg',
+                originalPrice: '\$534,33',
+                imageUrl:
+                    'https://www.nextdirect.com/nxtcms/resource/blob/5821518/d114a8023263017f86b11c206949508e/shackets-data.jpg',
               ),
+              SizedBox(height: 10),
               OrderItem(
                 imageUrl:
-                'https://www.nextdirect.com/nxtcms/resource/blob/5821504/ee0fc6a294be647924fa5f5e7e3df8e9/hoodies-data.jpg',
+                    'https://www.nextdirect.com/nxtcms/resource/blob/5821504/ee0fc6a294be647924fa5f5e7e3df8e9/hoodies-data.jpg',
                 title: 'Printed Sleeveless Tiered...',
                 price: '\$299,43',
                 originalPrice: '\$534,33',
@@ -43,14 +46,14 @@ class CartScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 16),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: Colors.grey),
                 ),
-                child: Row(
+                child: const Row(
                   children: [
                     Icon(Icons.local_offer_outlined),
                     SizedBox(width: 8),
@@ -96,7 +99,7 @@ class CartScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple,
+                  backgroundColor: Color(0xFF7B61FF),
                   padding: EdgeInsets.symmetric(
                     horizontal: 32,
                     vertical: 16,
@@ -171,7 +174,7 @@ class OrderItem extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Colors.green,
+                        color: Colors.blue,
                       ),
                     ),
                     SizedBox(width: 8),

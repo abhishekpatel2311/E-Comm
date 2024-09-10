@@ -167,9 +167,14 @@ class ProfileScreen extends StatelessWidget {
                 BlendMode.srcIn,
               ),
             ),
-            title: const Text(
-              "Log Out",
-              style: TextStyle(color: errorColor, fontSize: 14, height: 1),
+            title: GestureDetector(
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+              },
+              child: const Text(
+                "Log Out",
+                style: TextStyle(color: errorColor, fontSize: 14, height: 1),
+              ),
             ),
           )
         ],

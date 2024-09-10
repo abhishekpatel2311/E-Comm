@@ -4,7 +4,7 @@ import 'package:shop/entry_point.dart';
 import 'screen_export.dart';
 
 // Yuo will get 50+ screens and more once you have the full template
-// 🔗 Full template: https://theflutterway.gumroad.com/l/fluttershop
+// 🔗 Full template:
 
 // NotificationPermissionScreen()
 // PreferredLanguageScreen()

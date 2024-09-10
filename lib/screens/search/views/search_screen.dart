@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'components/search_form.dart';
+
 class SearchScreen extends StatefulWidget {
   @override
   _SearchScreenState createState() => _SearchScreenState();
@@ -41,52 +43,55 @@ class _SearchScreenState extends State<SearchScreen> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                labelText: 'Search',
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.search),
-                suffixIcon: _searchQuery.isNotEmpty
-                    ? IconButton(
-                  icon: Icon(Icons.clear),
-                  onPressed: () {
-                    setState(() {
-                      _searchController.clear();
-                      _searchQuery = '';
-                    });
-                  },
-                )
-                    : null,
-              ),
-              onChanged: (query) {
-                setState(() {
-                  _searchQuery = query;
-                });
-              },
-            ),
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: _filteredItems.length,
-              itemBuilder: (context, index) {
-                final item = _filteredItems[index];
-                return ListTile(
-                  title: Text(item['title']!),
-                  subtitle: Text(item['category']!),
-                  onTap: () {
-                    // Handle item tap
-                  },
-                );
-              },
-            ),
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: SearchForm(),
       ),
+      //   children: [
+      //     Padding(
+      //       padding: const EdgeInsets.all(8.0),
+      //       child: TextField(
+      //         controller: _searchController,
+      //         decoration: InputDecoration(
+      //           labelText: 'Search',
+      //           border: OutlineInputBorder(),
+      //           prefixIcon: Icon(Icons.search),
+      //           suffixIcon: _searchQuery.isNotEmpty
+      //               ? IconButton(
+      //             icon: Icon(Icons.clear),
+      //             onPressed: () {
+      //               setState(() {
+      //                 _searchController.clear();
+      //                 _searchQuery = '';
+      //               });
+      //             },
+      //           )
+      //               : null,
+      //         ),
+      //         onChanged: (query) {
+      //           setState(() {
+      //             _searchQuery = query;
+      //           });
+      //         },
+      //       ),
+      //     ),
+      //     Expanded(
+      //       child: ListView.builder(
+      //         itemCount: _filteredItems.length,
+      //         itemBuilder: (context, index) {
+      //           final item = _filteredItems[index];
+      //           return ListTile(
+      //             title: Text(item['title']!),
+      //             subtitle: Text(item['category']!),
+      //             onTap: () {
+      //               // Handle item tap
+      //             },
+      //           );
+      //         },
+      //       ),
+      //     ),
+      //   ],
+      // ),
     );
   }
 
