@@ -80,6 +80,7 @@ class _EntryPointState extends State<EntryPoint> {
       ),
       // body: _pages[_currentIndex],
       body: PageTransitionSwitcher(
+
         duration: defaultDuration,
         transitionBuilder: (child, animation, secondAnimation) {
           return FadeThroughTransition(
