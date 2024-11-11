@@ -10,6 +10,7 @@ class BannerMStyle1 extends StatelessWidget {
     required this.text,
     required this.press,
   });
+
   final String? image;
   final String text;
   final VoidCallback press;

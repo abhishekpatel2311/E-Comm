@@ -133,6 +133,7 @@ class CardInfo extends StatelessWidget {
                   FilteringTextInputFormatter.digitsOnly,
                 ],
                 decoration: InputDecoration(
+
                   hintText: "CVV",
                   counterText: "",
                   prefixIcon: Padding(

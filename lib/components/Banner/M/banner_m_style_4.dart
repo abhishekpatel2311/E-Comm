@@ -15,6 +15,7 @@ class BannerMStyle4 extends StatelessWidget {
     required this.discountParcent,
     this.subtitle,
   });
+
   final String? image;
   final String title;
   final String? subtitle;

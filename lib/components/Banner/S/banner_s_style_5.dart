@@ -14,6 +14,7 @@ class BannerSStyle5 extends StatelessWidget {
     this.subtitle,
     this.bottomText,
   });
+
   final String? image;
   final String title;
   final String? subtitle, bottomText;

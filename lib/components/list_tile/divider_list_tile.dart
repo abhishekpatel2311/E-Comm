@@ -11,6 +11,7 @@ class DividerListTile extends StatelessWidget {
     this.minLeadingWidth,
     this.isShowDivider = true,
   });
+
   final bool isShowForwordArrow, isShowDivider;
   final Widget title;
   final Widget? leading;

@@ -14,6 +14,7 @@ class BannerMStyle3 extends StatelessWidget {
     required this.press,
     required this.discountParcent,
   });
+
   final String? image;
   final String title;
   final int discountParcent;
