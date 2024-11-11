@@ -11,6 +11,7 @@ class CheckMark extends StatelessWidget {
     this.iconColor = Colors.white,
     this.padding = const EdgeInsets.all(2),
   });
+
   final double radious;
   final Color activeColor, iconColor;
   final EdgeInsets padding;

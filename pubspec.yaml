@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
+  cupertino_icons:
   flutter_svg:
   form_field_validator:
   cached_network_image:

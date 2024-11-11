@@ -7,6 +7,7 @@ class ChatActiveDot extends StatelessWidget {
     super.key,
     this.dotColor = successColor,
   });
+
   final Color dotColor;
 
   @override
